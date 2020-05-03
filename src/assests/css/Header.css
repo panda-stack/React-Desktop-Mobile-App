@@ -1,0 +1,176 @@
+.menu_desktop {
+  display: inline;
+  padding: 10px;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+
+.menu_desktop a {
+    margin: 15px;
+    padding: 0px;
+    color: rgb(13, 13, 14);
+    font-size: 15px;
+    font-family: myfont-light;
+}
+
+.menu_desktop a:hover {
+    color: #CD845C;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+.menu_mobile {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    right: 30px;
+}
+
+.menulogo {
+    background-color: white;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    right: 0px;
+}
+
+.menulogo:hover {
+    cursor: pointer;
+}
+
+.menulogo:hover .icon {
+    stroke: #CD845C;
+}
+
+.menubtn {
+    background-color: rgb(245, 239, 236);
+    position: absolute;
+    height: 90px;
+    width: 120px;
+    top: 30px;
+    right: 0px;
+    text-align: center;
+    display: block;
+    border-color: black;
+}
+
+.menubtn a {
+    margin: 15px;
+    padding: 0px;
+    color: rgb(13, 13, 14);
+    font-size: 15px;
+    font-family: myfont-light;
+}
+
+.menubtn a:hover {
+    color: #CD845C;
+}
+
+.alarm {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 26px;
+    right: 50px;
+}
+
+.alarm:hover {
+    cursor: pointer;
+}
+
+.icon {
+    stroke: black;
+}
+
+.alarm:hover .icon {
+    stroke: #CD845C;
+}
+
+.alarm:hover .alarmcnt {
+    color: #CD845C;
+}
+
+.alarmimg {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.alarmcnt {
+    height: 40px;
+    width: 20px;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+.alarmcnt p {
+    padding: 0px;
+    margin: 2px 0px;
+    font-family: myfont-bold;
+    font-size: 16px;
+}
+
+@font-face {
+font-family: myfont-black;
+src: url("../fonts/wigrum-black.otf");
+}
+
+@font-face {
+font-family: myfont-bold;
+src: url("../fonts/wigrum-bold.otf");
+}
+
+@font-face {
+font-family: myfont-light;
+src: url("../fonts/wigrum-light.otf");
+}
+
+@font-face {
+font-family: myfont-medium;
+src: url("../fonts/wigrum-medium.otf");
+}
+
+@font-face {
+font-family: myfont;
+src: url("../fonts/wigrum.otf");
+}
+
+@media only screen and (max-width:700px) {
+    /* For mobile phones: */
+    .menu_desktop {
+        display: none;
+    }
+    .menulogo {
+        background-color: #F2C4A3;
+        height: 30px;
+        width: 30px;
+    }
+    .menubtn {
+        background-color: rgb(221, 178, 148);
+    }
+    .menubtn a:hover {
+        color: #CD845C;
+    }
+    .alarmimg {
+        height: 40px;
+        width: 40px;
+    }
+    .alarmcnt p {
+        margin: 2px 5px;
+        font-size: 23px;
+    }
+    .alarmcnt {
+        right: 5px;
+    }
+    .alarm {
+        right: 80px;
+    }
+  }
